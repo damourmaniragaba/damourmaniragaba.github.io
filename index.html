@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jean D'Amour Maniragaba</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
@@ -15,11 +14,11 @@
 <nav id="navbar">
   <a href="#hero" class="nav-logo">JDM<span>.</span></a>
   <ul class="nav-links">
-    <li><a href="#about">about</a></li>
-    <li><a href="#experience">experience</a></li>
-    <li><a href="#projects">projects</a></li>
-    <li><a href="#leadership">leadership</a></li>
-    <li><a href="#contact">contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#leadership">Leadership</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -27,73 +26,55 @@
 <section id="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-inner">
-  <div class="hero-inner">
-  <div class="hero-content">
-    <div class="hero-eyebrow">Cornell University · CS & Economics · Class of 2028</div>
-    <h1>Jean D'Amour<br><span class="accent">Maniragaba.</span></h1>
-    <p class="hero-sub">
-      Full-stack engineer from <strong>Rwanda</strong> building at scale —
-      from fintech serving <strong>20,000+ locations across 6 countries</strong>
-      to precision agriculture platforms and healthcare systems as CTO.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Cornell University · CS & Economics · Class of 2028</div>
+      <h1>Jean D'Amour<br><span class="accent">Maniragaba.</span></h1>
+      <p class="hero-sub">
+        Full-stack engineer from <strong>Rwanda</strong> — building fintech serving
+        <strong>20,000+ locations across 6 countries</strong>, precision agriculture
+        platforms, and healthcare systems as CTO.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="assets/headshot.jpg" alt="Jean D'Amour Maniragaba" class="hero-photo">
     </div>
   </div>
-
-  </div><!-- hero-content -->
-  <div class="hero-photo-wrap">
-    <img src="assets/headshot.jpg" alt="Jean D'Amour Maniragaba" class="hero-photo">
-  </div>
-  </div><!-- hero-inner -->
-
   <div class="ticker-wrap">
-    <div class="ticker-track" id="ticker">
-      <!-- filled by JS -->
-    </div>
+    <div class="ticker-track" id="ticker"></div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="max-w">
-    <div class="section-label">// about me</div>
-    <h2>Engineer. Founder.<br>Builder across borders.</h2>
+    <div class="section-label">About</div>
     <div class="about-grid reveal">
       <div class="about-text">
-        <p>
-          I'm Jean — a <strong>CS & Economics student at Cornell</strong> originally from Kigali, Rwanda.
-          I write code that ships to real users across East Africa and the United States.
-        </p>
-        <p>
-          My work spans <strong>full-stack web and mobile development</strong>, geospatial data engineering,
-          AI systems, and product infrastructure. I care about building things that actually solve problems
-          — whether that's a hospital appointment system reducing patient wait times in Rwanda, or
-          financial inclusion software reaching millions across 6 countries.
-        </p>
-        <p>
-          Before Cornell, I founded <strong>Computer Skills Clinics</strong> in Kigali — teaching 100+ students
-          Python, robotics, and ICT. I'm driven by the idea that great software built with intention
-          can level the playing field anywhere in the world.
-        </p>
+        <h2>Engineer. Founder.<br>Builder across borders.</h2>
+        <p>I'm Jean — a CS & Economics student at Cornell from Kigali, Rwanda. I write code that ships to real users across East Africa and the United States.</p>
+        <p>My work spans full-stack web and mobile development, geospatial data engineering, and product infrastructure. I care about building things that actually solve problems — whether that's a hospital system reducing patient wait times in Rwanda or financial software reaching millions across 6 countries.</p>
+        <p>Before Cornell, I founded <strong>Computer Skills Clinics</strong> in Kigali — teaching 100+ students Python, robotics, and ICT.</p>
       </div>
       <div class="about-stats">
         <div class="stat-card">
           <div class="stat-num">20K+</div>
-          <div class="stat-label">Agent locations reached via Equity Bank Rwanda app</div>
+          <div class="stat-label">Agent locations reached via Equity Bank Rwanda</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">6</div>
-          <div class="stat-label">East African countries served with financial inclusion tech</div>
+          <div class="stat-label">East African countries served</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">100+</div>
-          <div class="stat-label">Students taught programming & robotics via CSCs in Rwanda</div>
+          <div class="stat-label">Students taught programming & robotics</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">CTO</div>
-          <div class="stat-label">Led HCM hospital system development from architecture to launch</div>
+          <div class="stat-label">HCM hospital system — architecture to launch</div>
         </div>
       </div>
     </div>
@@ -103,7 +84,7 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="max-w">
-    <div class="section-label">// experience</div>
+    <div class="section-label">Experience</div>
     <h2>Where I've built.</h2>
     <div class="exp-list">
 
@@ -114,11 +95,11 @@
           <div class="exp-loc">New York, NY</div>
         </div>
         <div class="exp-body">
-          <div class="exp-role">Software Engineering <span>Intern</span></div>
+          <div class="exp-role">Software Engineering Intern</div>
           <ul class="exp-bullets">
-            <li>Architected and deployed full-stack features for Pickup Buddi's family-caregiver matching platform using <strong>React and Node.js</strong>, improving booking reliability and user experience</li>
-            <li>Built and integrated <strong>RESTful APIs with PostgreSQL</strong> for real-time scheduling, caregiver availability, and session tracking — reducing booking conflicts</li>
-            <li>Implemented trust and safety workflows including caregiver <strong>verification flows and notification systems</strong>, reducing onboarding drop-off</li>
+            <li>Architected full-stack features for a family-caregiver matching platform using React and Node.js</li>
+            <li>Built RESTful APIs with PostgreSQL for real-time scheduling and caregiver availability tracking</li>
+            <li>Implemented trust and safety workflows including verification flows and notification systems</li>
           </ul>
         </div>
       </div>
@@ -130,11 +111,11 @@
           <div class="exp-loc">Kigali, Rwanda</div>
         </div>
         <div class="exp-body">
-          <div class="exp-role">Software <span>Developer</span></div>
+          <div class="exp-role">Software Developer</div>
           <ul class="exp-bullets">
-            <li>Revamped the Equity Business App via <strong>Node.js migration</strong> deployed on <strong>Google Cloud + Docker</strong>, enabling transactions across <strong>20,000+ agent locations in 6 countries</strong></li>
-            <li>Redesigned the app's UI — streamlined registration increased monthly active users by <strong>15%</strong> across Kenya, Uganda, DRC, South Sudan, Tanzania, and Rwanda</li>
-            <li>Delivered a dynamic <strong>agent and merchant solution</strong> expanding financial inclusion for East African entrepreneurs</li>
+            <li>Migrated backend to Node.js on Google Cloud + Docker — enabled transactions across 20,000+ agent locations in 6 countries</li>
+            <li>Redesigned app UI, increasing monthly active users by 15% across Kenya, Uganda, DRC, South Sudan, Tanzania, and Rwanda</li>
+            <li>Delivered agent and merchant solution expanding financial inclusion for East African entrepreneurs</li>
           </ul>
         </div>
       </div>
@@ -146,11 +127,11 @@
           <div class="exp-loc">Ithaca, NY</div>
         </div>
         <div class="exp-body">
-          <div class="exp-role">Software Development <span>Engineer</span></div>
+          <div class="exp-role">Software Development Engineer</div>
           <ul class="exp-bullets">
-            <li>Engineered <strong>Python/R data pipelines</strong> to clean, process, and analyze <strong>1,000+ agricultural datasets</strong> for precision farming research</li>
-            <li>Built geospatial models and interactive dashboards using <strong>QGIS, Pix4D, Plotly, and Leaflet</strong> to optimize crop yield prediction</li>
-            <li>Automated reporting workflows delivering actionable insights from on-farm trials to both research teams and non-technical stakeholders</li>
+            <li>Built Python/R data pipelines processing 1,000+ agricultural datasets for precision farming research</li>
+            <li>Designed geospatial dashboards using QGIS, Pix4D, Plotly, and Leaflet to optimize crop yield prediction</li>
+            <li>Automated reporting workflows delivering insights from on-farm trials to research and non-technical teams</li>
           </ul>
         </div>
       </div>
@@ -162,63 +143,48 @@
 <!-- PROJECTS -->
 <section id="projects">
   <div class="max-w">
-    <div class="section-label">// projects</div>
+    <div class="section-label">Projects</div>
     <h2>Things I've shipped.</h2>
     <div class="projects-grid">
 
       <a href="https://hcm-frontend-service.vercel.app/" target="_blank" class="project-card reveal">
         <div class="project-tag">Healthcare · CTO</div>
         <div class="project-name">HCM Appointment System</div>
-        <div class="project-desc">
-          Full-stack hospital appointment management system (web & USSD) reducing patient wait times
-          and enabling real-time doctor-patient scheduling across Rwandan hospitals.
-          Led architecture and development as CTO.
-        </div>
+        <div class="project-desc">Full-stack hospital appointment system (web & USSD) reducing patient wait times and enabling real-time doctor-patient scheduling across Rwandan hospitals. Led as CTO.</div>
         <div class="project-stack">
           <span class="stack-pill">React</span>
           <span class="stack-pill">Node.js</span>
           <span class="stack-pill">PostgreSQL</span>
           <span class="stack-pill">USSD</span>
-          <span class="stack-pill">REST APIs</span>
         </div>
-        <div class="project-link">View Project</div>
+        <div class="project-link">View Project ↗</div>
       </a>
 
       <a href="https://quonvoy-website.vercel.app/" target="_blank" class="project-card reveal">
-        <div class="project-tag">Mobile · AR/GPS · Award Winner</div>
+        <div class="project-tag">Mobile · AR/GPS · 🏆 Award Winner</div>
         <div class="project-name">Quonvoy</div>
-        <div class="project-desc">
-          AR/GPS/WPS-powered mobile app built with React Native and Unity 3D.
-          Contributed to a 15% sales increase for 2 consecutive years.
-          Awarded <strong style="color:var(--white)">Prophead of the Year 2022</strong>.
-        </div>
+        <div class="project-desc">AR/GPS/WPS-powered mobile app with React Native and Unity 3D. Contributed to 15% sales increase for 2 consecutive years. Awarded Prophead of the Year 2022.</div>
         <div class="project-stack">
           <span class="stack-pill">C#</span>
           <span class="stack-pill">React Native</span>
           <span class="stack-pill">Unity 3D</span>
-          <span class="stack-pill">AR</span>
-          <span class="stack-pill">GPS/WPS</span>
+          <span class="stack-pill">AR/GPS</span>
         </div>
-        <div class="project-link">View Project</div>
+        <div class="project-link">View Project ↗</div>
       </a>
 
       <a href="https://btcs.gg/" target="_blank" class="project-card reveal">
         <div class="project-tag">Full-Stack · Web Platform</div>
         <div class="project-name">BTCs</div>
-        <div class="project-desc">
-          Full-stack casino leaderboard and betting platform with GraphQL and REST APIs,
-          deployed on AWS/Azure. Optimized SQL Server performance through stored procedure
-          refactoring, indexing, and query tuning.
-        </div>
+        <div class="project-desc">Casino leaderboard and betting platform with GraphQL and REST APIs deployed on AWS/Azure. Optimized SQL Server performance through indexing and query tuning.</div>
         <div class="project-stack">
           <span class="stack-pill">React</span>
           <span class="stack-pill">Next.js</span>
-          <span class="stack-pill">Node.js</span>
           <span class="stack-pill">PostgreSQL</span>
           <span class="stack-pill">GraphQL</span>
           <span class="stack-pill">AWS</span>
         </div>
-        <div class="project-link">View Project</div>
+        <div class="project-link">View Project ↗</div>
       </a>
 
     </div>
@@ -228,7 +194,7 @@
 <!-- LEADERSHIP -->
 <section id="leadership">
   <div class="max-w">
-    <div class="section-label">// leadership & impact</div>
+    <div class="section-label">Leadership & Impact</div>
     <h2>Beyond the code.</h2>
     <div class="leadership-grid">
 
@@ -236,9 +202,9 @@
         <div class="lead-org">Computer Skills Clinics (CSCs)</div>
         <div class="lead-role-date">Founder & President · Jan 2024 — Present · Kigali, Rwanda</div>
         <ul class="lead-bullets">
-          <li>Founded and scaled CSCs to equip <strong style="color:var(--white)">100+ students</strong> with digital literacy, Python/Scratch programming, and robotics</li>
-          <li>Designed and delivered hands-on ICT and robotics curriculum through team-based competitions</li>
-          <li>Coordinated virtual and in-person trainings fostering technical confidence and problem-solving skills</li>
+          <li>Founded and scaled CSCs to equip 100+ students with Python, robotics, and digital literacy</li>
+          <li>Designed hands-on ICT curriculum delivered through team-based competitions</li>
+          <li>Coordinated virtual and in-person trainings across student cohorts</li>
         </ul>
       </div>
 
@@ -246,26 +212,20 @@
         <div class="lead-org">Underrepresented Minorities in Computing (URMC)</div>
         <div class="lead-role-date">Associate · Aug 2024 — Present · Cornell University</div>
         <ul class="lead-bullets">
-          <li>Led initiatives expanding mentorship, networking, and professional development for underrepresented CS students</li>
-          <li>Organized technical workshops fostering collaboration and skill-building in programming and software development</li>
-          <li>Partnered with faculty to strengthen diversity, equity, and inclusion across Cornell's computing disciplines</li>
+          <li>Led mentorship, networking, and professional development initiatives for underrepresented CS students</li>
+          <li>Organized technical workshops on programming and software development</li>
+          <li>Partnered with faculty to strengthen DEI across Cornell's computing disciplines</li>
         </ul>
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- AWARDS -->
-<section id="awards">
-  <div class="max-w">
-    <div class="section-label">// recognition & programs</div>
-    <h2>Affiliations.</h2>
-    <div class="awards-list reveal">
+    <!-- Awards inline under leadership -->
+    <div class="awards-row reveal">
       <span class="award-pill">🏆 Prophead of the Year 2022</span>
       <span class="award-pill">AI Ignite Fellow</span>
       <span class="award-pill">2025 CodePath Fellow</span>
-      <span class="award-pill">Goldman Sachs Engineering Possibilities Summit 2025</span>
+      <span class="award-pill">Goldman Sachs Engineering Summit 2025</span>
       <span class="award-pill">ColorStack</span>
       <span class="award-pill">NSBE</span>
       <span class="award-pill">AfroTech</span>
@@ -275,13 +235,10 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-inner">
-    <div class="section-label">// contact</div>
-    <h2>Let's build<br>something.</h2>
-    <p class="contact-sub">
-      Open to internship opportunities, collaborations, and conversations
-      about technology, impact, and building across borders.
-    </p>
+  <div class="max-w contact-inner">
+    <div class="section-label">Contact</div>
+    <h2>Let's build something.</h2>
+    <p class="contact-sub">Open to internships, collaborations, and conversations about technology and impact.</p>
     <div class="contact-links">
       <a href="mailto:jm2876@cornell.edu" class="contact-link">jm2876@cornell.edu</a>
       <a href="https://linkedin.com/in/jeandamourmaniragaba/" target="_blank" class="contact-link">LinkedIn</a>
@@ -290,13 +247,11 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <span class="footer-text">© 2025 Jean D'Amour Maniragaba</span>
-  <span class="footer-text">Built with intention · Kigali → Ithaca → New York</span>
+  <span class="footer-text">© 2026 Jean D'Amour Maniragaba</span>
+  <span class="footer-text">Kigali → Ithaca → New York</span>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
