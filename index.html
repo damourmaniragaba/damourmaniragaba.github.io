@@ -1,183 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jean D'Amour Maniragaba — Software Engineer</title>
-  <meta name="description" content="Cornell student building data-driven systems at the intersection of machine learning, geospatial analytics, and economic insight." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean D'Amour Maniragaba</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<div class="noise" aria-hidden="true"></div>
-<div class="cursor-dot" id="cursorDot"></div>
-
-<nav id="nav">
-  <div class="nav-inner">
-    <a href="#" class="nav-logo">JDM<span class="blink">_</span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about" data-num="01">About</a></li>
-      <li><a href="#experience" data-num="02">Experience</a></li>
-      <li><a href="#projects" data-num="03">Projects</a></li>
-      <li><a href="#skills" data-num="04">Skills</a></li>
-      <li><a href="#leadership" data-num="05">Leadership</a></li>
-      <li><a href="#contact" data-num="06">Contact</a></li>
-    </ul>
-  </div>
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">JDM<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#leadership">leadership</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
 </nav>
 
-<header class="hero" id="hero">
-  <div class="hero-bg-grid" aria-hidden="true"></div>
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
   <div class="hero-content">
-    <div class="hero-badge reveal">
-      <span class="dot dot--green"></span>
-      Cornell University · Information Science &amp; Economics
-    </div>
-    <h1 class="hero-name reveal reveal--delay-1">
-      Jean D'Amour<br /><em>Maniragaba</em>
-    </h1>
-    <p class="hero-tagline reveal reveal--delay-2">
-      Building data-driven systems at the intersection of<br />
-      <span class="highlight">machine learning</span>, <span class="highlight">geospatial analytics</span>, and <span class="highlight">economic insight</span>.
+    <div class="hero-eyebrow">Cornell University · CS & Economics · Class of 2028</div>
+    <h1>Jean D'Amour<br><span class="accent">Maniragaba.</span></h1>
+    <p class="hero-sub">
+      Full-stack engineer from <strong>Rwanda</strong> building at scale —
+      from fintech serving <strong>20,000+ locations across 6 countries</strong>
+      to precision agriculture platforms and healthcare systems as CTO.
     </p>
-    <div class="hero-cta reveal reveal--delay-3">
-      <a href="#projects" class="btn btn--primary">View Projects</a>
-      <a href="mailto:jm2876@cornell.edu" class="btn btn--ghost">Get in Touch</a>
-    </div>
-    <div class="hero-scroll reveal reveal--delay-4" aria-hidden="true">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
     </div>
   </div>
-  <div class="hero-deco" aria-hidden="true">
-    <canvas id="heroCanvas"></canvas>
-  </div>
-</header>
 
-<section id="about" class="section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2 class="section-title">About</h2>
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker">
+      <!-- filled by JS -->
     </div>
-    <div class="about-grid">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="max-w">
+    <div class="section-label">// about me</div>
+    <h2>Engineer. Founder.<br>Builder across borders.</h2>
+    <div class="about-grid reveal">
       <div class="about-text">
-        <p class="lead">I'm an Information Science and Economics student at Cornell University interested in how data and intelligent systems can be used to understand and improve complex real-world systems.</p>
-        <p>My work spans data engineering, statistical modeling, and geospatial analytics. At Cornell's Nutrient Management Spear Program, I build pipelines that process large-scale agricultural datasets, generate yield insights, and support decision-making through spatial modeling and automated reporting.</p>
-        <p>I'm particularly interested in machine learning, large language models, and the broader question of how we can build systems that learn, reason, and generate knowledge.</p>
-        <div class="about-interests">
-          <span>Machine Learning</span>
-          <span>LLMs &amp; AGI</span>
-          <span>Geospatial Analytics</span>
-          <span>Economic Systems</span>
-          <span>Precision Agriculture</span>
-          <span>Robotics</span>
-        </div>
+        <p>
+          I'm Jean — a <strong>CS & Economics student at Cornell</strong> originally from Kigali, Rwanda.
+          I write code that ships to real users across East Africa and the United States.
+        </p>
+        <p>
+          My work spans <strong>full-stack web and mobile development</strong>, geospatial data engineering,
+          AI systems, and product infrastructure. I care about building things that actually solve problems
+          — whether that's a hospital appointment system reducing patient wait times in Rwanda, or
+          financial inclusion software reaching millions across 6 countries.
+        </p>
+        <p>
+          Before Cornell, I founded <strong>Computer Skills Clinics</strong> in Kigali — teaching 100+ students
+          Python, robotics, and ICT. I'm driven by the idea that great software built with intention
+          can level the playing field anywhere in the world.
+        </p>
       </div>
       <div class="about-stats">
         <div class="stat-card">
-          <div class="stat-num" data-count="1000">0</div>
-          <div class="stat-suffix">+</div>
-          <div class="stat-label">Datasets Processed</div>
+          <div class="stat-num">20K+</div>
+          <div class="stat-label">Agent locations reached via Equity Bank Rwanda app</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num" data-count="200">0</div>
-          <div class="stat-suffix">k+</div>
-          <div class="stat-label">Data Points Analyzed</div>
+          <div class="stat-num">6</div>
+          <div class="stat-label">East African countries served with financial inclusion tech</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num" data-count="50">0</div>
-          <div class="stat-suffix">+</div>
-          <div class="stat-label">Countries Modeled</div>
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Students taught programming & robotics via CSCs in Rwanda</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num" data-count="100">0</div>
-          <div class="stat-suffix">+</div>
-          <div class="stat-label">Students Taught</div>
+          <div class="stat-num">CTO</div>
+          <div class="stat-label">Led HCM hospital system development from architecture to launch</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="experience" class="section section--alt">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Experience</h2>
-    </div>
-    <div class="timeline">
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="max-w">
+    <div class="section-label">// experience</div>
+    <h2>Where I've built.</h2>
+    <div class="exp-list">
 
-      <div class="timeline-item" data-aos>
-        <div class="timeline-marker">
-          <div class="timeline-dot"></div>
-          <div class="timeline-line"></div>
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-date">May 2026 — Present</div>
+          <div class="exp-company">Pickup Buddi</div>
+          <div class="exp-loc">New York, NY</div>
         </div>
-        <div class="timeline-body">
-          <div class="timeline-meta">
-            <span class="timeline-date">Aug 2024 – Present</span>
-            <span class="timeline-tag">Current</span>
-          </div>
-          <h3 class="timeline-role">Software Development Engineer</h3>
-          <p class="timeline-company">Cornell Nutrient Management Spear Program (NMSP)</p>
-          <ul class="timeline-bullets">
-            <li>Built end-to-end data pipelines in Python/R to process and analyze 1,000+ agricultural yield datasets</li>
-            <li>Developed geospatial analytics systems using QGIS, Plotly, and Leaflet to model crop yield patterns</li>
-            <li>Automated reporting workflows transforming raw farm data into actionable insights</li>
+        <div class="exp-body">
+          <div class="exp-role">Software Engineering <span>Intern</span></div>
+          <ul class="exp-bullets">
+            <li>Architected and deployed full-stack features for Pickup Buddi's family-caregiver matching platform using <strong>React and Node.js</strong>, improving booking reliability and user experience</li>
+            <li>Built and integrated <strong>RESTful APIs with PostgreSQL</strong> for real-time scheduling, caregiver availability, and session tracking — reducing booking conflicts</li>
+            <li>Implemented trust and safety workflows including caregiver <strong>verification flows and notification systems</strong>, reducing onboarding drop-off</li>
           </ul>
-          <div class="timeline-stack">
-            <span>Python</span><span>R</span><span>QGIS</span><span>Plotly</span><span>Leaflet</span>
-          </div>
         </div>
       </div>
 
-      <div class="timeline-item" data-aos>
-        <div class="timeline-marker">
-          <div class="timeline-dot"></div>
-          <div class="timeline-line"></div>
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-date">Jun — Aug 2025</div>
+          <div class="exp-company">Equity Bank Rwanda</div>
+          <div class="exp-loc">Kigali, Rwanda</div>
         </div>
-        <div class="timeline-body">
-          <div class="timeline-meta">
-            <span class="timeline-date">May 2025 – Aug 2025</span>
-          </div>
-          <h3 class="timeline-role">Research Assistant</h3>
-          <p class="timeline-company">University of Chicago Booth School of Business</p>
-          <ul class="timeline-bullets">
-            <li>Developed regression models analyzing exchange rate impacts on GDP and inflation across 50+ countries</li>
-            <li>Processed 200k+ economic data points using Python/R pipelines</li>
-            <li>Applied causal inference methods to evaluate fiscal policy and debt dynamics</li>
+        <div class="exp-body">
+          <div class="exp-role">Software <span>Developer</span></div>
+          <ul class="exp-bullets">
+            <li>Revamped the Equity Business App via <strong>Node.js migration</strong> deployed on <strong>Google Cloud + Docker</strong>, enabling transactions across <strong>20,000+ agent locations in 6 countries</strong></li>
+            <li>Redesigned the app's UI — streamlined registration increased monthly active users by <strong>15%</strong> across Kenya, Uganda, DRC, South Sudan, Tanzania, and Rwanda</li>
+            <li>Delivered a dynamic <strong>agent and merchant solution</strong> expanding financial inclusion for East African entrepreneurs</li>
           </ul>
-          <div class="timeline-stack">
-            <span>Python</span><span>R</span><span>Econometrics</span><span>Causal Inference</span>
-          </div>
         </div>
       </div>
 
-      <div class="timeline-item" data-aos>
-        <div class="timeline-marker">
-          <div class="timeline-dot"></div>
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-date">Sep 2025 — May 2026</div>
+          <div class="exp-company">Cornell NMSP</div>
+          <div class="exp-loc">Ithaca, NY</div>
         </div>
-        <div class="timeline-body">
-          <div class="timeline-meta">
-            <span class="timeline-date">Aug 2024 – Present</span>
-            <span class="timeline-tag">Current</span>
-          </div>
-          <h3 class="timeline-role">IT Client Services Assistant</h3>
-          <p class="timeline-company">Cornell University</p>
-          <ul class="timeline-bullets">
-            <li>Deployed and configured computing systems for university operations</li>
-            <li>Managed device inventory and troubleshooting workflows</li>
-            <li>Provided technical support across campus IT systems</li>
+        <div class="exp-body">
+          <div class="exp-role">Software Development <span>Engineer</span></div>
+          <ul class="exp-bullets">
+            <li>Engineered <strong>Python/R data pipelines</strong> to clean, process, and analyze <strong>1,000+ agricultural datasets</strong> for precision farming research</li>
+            <li>Built geospatial models and interactive dashboards using <strong>QGIS, Pix4D, Plotly, and Leaflet</strong> to optimize crop yield prediction</li>
+            <li>Automated reporting workflows delivering actionable insights from on-farm trials to both research teams and non-technical stakeholders</li>
           </ul>
-          <div class="timeline-stack">
-            <span>IT Systems</span><span>Hardware</span><span>Networking</span>
-          </div>
         </div>
       </div>
 
@@ -185,189 +152,144 @@
   </div>
 </section>
 
-<section id="projects" class="section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Projects</h2>
-    </div>
-
-    <div class="project-featured" data-aos>
-      <div class="project-featured-label">Featured Project</div>
-      <div class="project-featured-inner">
-        <div class="project-featured-visual">
-          <canvas id="yieldCanvas" width="420" height="280"></canvas>
-        </div>
-        <div class="project-featured-content">
-          <div class="project-tag">Geospatial · Precision Agriculture</div>
-          <h3 class="project-title">Precision Agriculture Yield Analytics</h3>
-          <p class="project-desc">End-to-end geospatial pipeline to process agricultural yield monitor data and generate precision farming insights. Applied kriging to produce yield surfaces and management zone maps.</p>
-          <ul class="project-highlights">
-            <li>Processed 1,000+ yield monitor datasets across multiple fields</li>
-            <li>Applied kriging interpolation for yield surface generation</li>
-            <li>Automated farm decision-making reporting pipelines</li>
-          </ul>
-          <div class="project-stack-row">
-            <span>Python</span><span>GeoPandas</span><span>Spatial Data</span><span>Kriging</span><span>QGIS</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="max-w">
+    <div class="section-label">// projects</div>
+    <h2>Things I've shipped.</h2>
     <div class="projects-grid">
-      <div class="project-card" data-aos>
-        <div class="project-card-top">
-          <div class="project-icon">📊</div>
-        </div>
-        <div class="project-tag">Economics · Econometrics</div>
-        <h3 class="project-title">Macroeconomic Data Modeling</h3>
-        <p class="project-desc">Analyzed relationships between exchange rates, GDP, and inflation across 50+ countries. Built regression models and designed simulations for fiscal policy evaluation.</p>
-        <div class="project-stack-row">
-          <span>Python</span><span>R</span><span>Econometrics</span>
-        </div>
-      </div>
 
-      <div class="project-card" data-aos>
-        <div class="project-card-top">
-          <div class="project-icon">🗺️</div>
+      <a href="https://hcm-frontend-service.vercel.app/" target="_blank" class="project-card reveal">
+        <div class="project-tag">Healthcare · CTO</div>
+        <div class="project-name">HCM Appointment System</div>
+        <div class="project-desc">
+          Full-stack hospital appointment management system (web & USSD) reducing patient wait times
+          and enabling real-time doctor-patient scheduling across Rwandan hospitals.
+          Led architecture and development as CTO.
         </div>
-        <div class="project-tag">Data Visualization</div>
-        <h3 class="project-title">Geospatial Yield Dashboard</h3>
-        <p class="project-desc">Interactive dashboards for visualizing agricultural yield and spatial patterns. Field-level yield maps and visual decision tools for researchers and farmers.</p>
-        <div class="project-stack-row">
-          <span>Plotly</span><span>Leaflet</span><span>JavaScript</span>
+        <div class="project-stack">
+          <span class="stack-pill">React</span>
+          <span class="stack-pill">Node.js</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">USSD</span>
+          <span class="stack-pill">REST APIs</span>
         </div>
-      </div>
+        <div class="project-link">View Project</div>
+      </a>
+
+      <a href="https://quonvoy-website.vercel.app/" target="_blank" class="project-card reveal">
+        <div class="project-tag">Mobile · AR/GPS · Award Winner</div>
+        <div class="project-name">Quonvoy</div>
+        <div class="project-desc">
+          AR/GPS/WPS-powered mobile app built with React Native and Unity 3D.
+          Contributed to a 15% sales increase for 2 consecutive years.
+          Awarded <strong style="color:var(--white)">Prophead of the Year 2022</strong>.
+        </div>
+        <div class="project-stack">
+          <span class="stack-pill">C#</span>
+          <span class="stack-pill">React Native</span>
+          <span class="stack-pill">Unity 3D</span>
+          <span class="stack-pill">AR</span>
+          <span class="stack-pill">GPS/WPS</span>
+        </div>
+        <div class="project-link">View Project</div>
+      </a>
+
+      <a href="https://btcs.gg/" target="_blank" class="project-card reveal">
+        <div class="project-tag">Full-Stack · Web Platform</div>
+        <div class="project-name">BTCs</div>
+        <div class="project-desc">
+          Full-stack casino leaderboard and betting platform with GraphQL and REST APIs,
+          deployed on AWS/Azure. Optimized SQL Server performance through stored procedure
+          refactoring, indexing, and query tuning.
+        </div>
+        <div class="project-stack">
+          <span class="stack-pill">React</span>
+          <span class="stack-pill">Next.js</span>
+          <span class="stack-pill">Node.js</span>
+          <span class="stack-pill">PostgreSQL</span>
+          <span class="stack-pill">GraphQL</span>
+          <span class="stack-pill">AWS</span>
+        </div>
+        <div class="project-link">View Project</div>
+      </a>
+
     </div>
   </div>
 </section>
 
-<section id="skills" class="section section--alt">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Skills</h2>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-group" data-aos>
-        <h4 class="skill-group-title">Languages</h4>
-        <div class="skill-bars">
-          <div class="skill-bar"><span class="skill-name">Python</span><div class="skill-track"><div class="skill-fill" data-width="92"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">R</span><div class="skill-track"><div class="skill-fill" data-width="85"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">SQL</span><div class="skill-track"><div class="skill-fill" data-width="78"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">JavaScript</span><div class="skill-track"><div class="skill-fill" data-width="65"></div></div></div>
-        </div>
-      </div>
-      <div class="skill-group" data-aos>
-        <h4 class="skill-group-title">Data &amp; ML</h4>
-        <div class="skill-bars">
-          <div class="skill-bar"><span class="skill-name">Data Pipelines</span><div class="skill-track"><div class="skill-fill" data-width="88"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">Statistical Modeling</span><div class="skill-track"><div class="skill-fill" data-width="82"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">Machine Learning</span><div class="skill-track"><div class="skill-fill" data-width="72"></div></div></div>
-          <div class="skill-bar"><span class="skill-name">Geospatial Analytics</span><div class="skill-track"><div class="skill-fill" data-width="86"></div></div></div>
-        </div>
-      </div>
-      <div class="skill-group" data-aos>
-        <h4 class="skill-group-title">Tools</h4>
-        <div class="skill-pills">
-          <span>GeoPandas</span><span>QGIS</span><span>Plotly</span><span>Leaflet</span>
-          <span>Git</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="leadership" class="section">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">05</span>
-      <h2 class="section-title">Leadership &amp; Impact</h2>
-    </div>
+<!-- LEADERSHIP -->
+<section id="leadership">
+  <div class="max-w">
+    <div class="section-label">// leadership & impact</div>
+    <h2>Beyond the code.</h2>
     <div class="leadership-grid">
-      <div class="leadership-card leadership-card--featured" data-aos>
-        <div class="leadership-icon">🌍</div>
-        <div class="leadership-content">
-          <h3>Founder &amp; President — Empower Them</h3>
-          <p>Secured a $10,000 Davis Projects for Peace grant to train 30+ women in financial literacy and microenterprise development. Achieved 50% average income growth and contributed to a 60% reduction in community violence.</p>
-          <div class="leadership-stats">
-            <div><strong>$10K</strong><span>Grant Secured</span></div>
-            <div><strong>30+</strong><span>Women Trained</span></div>
-            <div><strong>50%</strong><span>Income Growth</span></div>
-            <div><strong>60%</strong><span>Violence Reduction</span></div>
-          </div>
-        </div>
+
+      <div class="lead-card reveal">
+        <div class="lead-org">Computer Skills Clinics (CSCs)</div>
+        <div class="lead-role-date">Founder & President · Jan 2024 — Present · Kigali, Rwanda</div>
+        <ul class="lead-bullets">
+          <li>Founded and scaled CSCs to equip <strong style="color:var(--white)">100+ students</strong> with digital literacy, Python/Scratch programming, and robotics</li>
+          <li>Designed and delivered hands-on ICT and robotics curriculum through team-based competitions</li>
+          <li>Coordinated virtual and in-person trainings fostering technical confidence and problem-solving skills</li>
+        </ul>
       </div>
-      <div class="leadership-card" data-aos>
-        <div class="leadership-icon">💻</div>
-        <div class="leadership-content">
-          <h3>Founder — Computer Skills Clinics</h3>
-          <p>Created and ran programming and digital literacy clinics for 100+ students. Built hands-on robotics and coding training programs to expand access to tech education.</p>
-        </div>
+
+      <div class="lead-card reveal">
+        <div class="lead-org">Underrepresented Minorities in Computing (URMC)</div>
+        <div class="lead-role-date">Associate · Aug 2024 — Present · Cornell University</div>
+        <ul class="lead-bullets">
+          <li>Led initiatives expanding mentorship, networking, and professional development for underrepresented CS students</li>
+          <li>Organized technical workshops fostering collaboration and skill-building in programming and software development</li>
+          <li>Partnered with faculty to strengthen diversity, equity, and inclusion across Cornell's computing disciplines</li>
+        </ul>
       </div>
-      <div class="leadership-card" data-aos>
-        <div class="leadership-icon">🎓</div>
-        <div class="leadership-content">
-          <h3>Associate — URMC (Cornell)</h3>
-          <p>Led workshops and mentorship initiatives in computing. Promoted diversity and inclusion in tech through peer education and community building.</p>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<section id="contact" class="section section--alt">
-  <div class="container">
-    <div class="section-header">
-      <span class="section-num">06</span>
-      <h2 class="section-title">Contact</h2>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-left" data-aos>
-        <h3>Let's build something together.</h3>
-        <p>I'm actively looking for research positions, internships, and collaborative projects in ML, data engineering, or geospatial systems. My inbox is open — I typically respond within 24 hours.</p>
-        <div class="contact-availability">
-          <span class="dot dot--green"></span>
-          Available for opportunities
-        </div>
-      </div>
-      <div class="contact-links" data-aos>
-        <a href="mailto:jm2876@cornell.edu" class="contact-link">
-          <div class="contact-link-icon">✉</div>
-          <div>
-            <div class="contact-link-label">Email</div>
-            <div class="contact-link-val">jm2876@cornell.edu</div>
-          </div>
-        </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon">gh</div>
-          <div>
-            <div class="contact-link-label">GitHub</div>
-            <div class="contact-link-val">github.com/yourusername</div>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/jdmaniragaba" target="_blank" rel="noopener" class="contact-link">
-          <div class="contact-link-icon">in</div>
-          <div>
-            <div class="contact-link-label">LinkedIn</div>
-            <div class="contact-link-val">linkedin.com/in/jdmaniragaba</div>
-          </div>
-        </a>
-      </div>
+<!-- AWARDS -->
+<section id="awards">
+  <div class="max-w">
+    <div class="section-label">// recognition & programs</div>
+    <h2>Affiliations.</h2>
+    <div class="awards-list reveal">
+      <span class="award-pill">🏆 Prophead of the Year 2022</span>
+      <span class="award-pill">AI Ignite Fellow</span>
+      <span class="award-pill">2025 CodePath Fellow</span>
+      <span class="award-pill">Goldman Sachs Engineering Possibilities Summit 2025</span>
+      <span class="award-pill">ColorStack</span>
+      <span class="award-pill">NSBE</span>
+      <span class="award-pill">AfroTech</span>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <span class="nav-logo">JDM<span class="blink">_</span></span>
-      <p>Designed &amp; built by Jean D'Amour Maniragaba · Cornell University</p>
-      <p class="footer-year">© <span id="year"></span></p>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label">// contact</div>
+    <h2>Let's build<br>something.</h2>
+    <p class="contact-sub">
+      Open to internship opportunities, collaborations, and conversations
+      about technology, impact, and building across borders.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:jm2876@cornell.edu" class="contact-link">jm2876@cornell.edu</a>
+      <a href="https://linkedin.com/in/jeandamourmaniragaba/" target="_blank" class="contact-link">LinkedIn</a>
+      <a href="https://github.com/damourmaniragaba" target="_blank" class="contact-link">GitHub</a>
     </div>
   </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-text">© 2025 Jean D'Amour Maniragaba</span>
+  <span class="footer-text">Built with intention · Kigali → Ithaca → New York</span>
 </footer>
 
-<script src="js/.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
